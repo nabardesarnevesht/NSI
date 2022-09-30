@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:paddingTop="20dp"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    tools:context=".ui.home.HomeFragment">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="فرم زیر را تکمیل کنید تا در موارد انتخاب شده با هم هماهنگ شویم:"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:text="استان"/>
+    <Spinner
+        android:id="@+id/Province"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dialog"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="شهر"/>
+    <Spinner
+        android:id="@+id/Cities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dialog"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="در ارتش‌های زیر امکان همکاری دارم:"/>
+    <CheckBox
+        android:id="@+id/W"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="پیاده"/>
+    <CheckBox
+        android:id="@+id/C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="با ماشین"/>
+    <CheckBox
+        android:id="@+id/V"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="فضای مجازی"/>
+    <CheckBox
+        android:id="@+id/D"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="طراحی (پوستر، کلیپ)"/>
+    <CheckBox
+        android:id="@+id/A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="تبلیغات (تراکت، پوستر، دیوارنویسی)"/>
+    <CheckBox
+        android:id="@+id/F"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="مالی (در صورت نیاز)"/>
+    <Button
+        android:id="@+id/setAbilitiesButton"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        android:textColor="@color/white"
+        android:text="ثبت مشخصات"
+        />
+</LinearLayout>

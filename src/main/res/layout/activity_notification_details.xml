@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.NotificationDetails">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.NabardeSarnevesht.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/Theme.NabardeSarnevesht.PopupOverlay"
+            />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="عنوان پیام"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+android:layout_marginTop="-47dp"
+            ></TextView>
+    </com.google.android.material.appbar.AppBarLayout>
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginRight="?attr/actionBarSize"
+        android:layout_marginLeft="?attr/actionBarSize"
+        android:paddingTop="10dp"
+        ></TextView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
